@@ -3,8 +3,8 @@ package de.funkenstille.modfeedback.main;
 import java.awt.Color;
 
 public class Constants {
-	public final static String discordIcon = "https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a69f118df70ad7828d4_icon_clyde_blurple_RGB.svg";
-	public final static String ownerAvatar = "https://cdn.discordapp.com/avatars/961367570869534781/f86de3020509fd951af86693fee0cbbb.webp?size=512";
+	public final static String discordIcon = "https://cdn.discordapp.com/embed/avatars/0.png";
+	public final static String ownerAvatar = "https://cdn.discordapp.com/avatars/961367570869534781/94bea945176838e90d12ffdd857319ad.webp?size=512";
 
 	public final static Color succes = new Color(0x43b582);
 	public final static Color darkGreen = new Color(0x00bd86);

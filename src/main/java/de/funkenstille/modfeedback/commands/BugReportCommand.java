@@ -7,7 +7,7 @@ import de.funkenstille.emotes.Emotes;
 import de.funkenstille.modfeedback.main.CommandContext;
 import de.funkenstille.modfeedback.main.Constants;
 import de.funkenstille.modfeedback.main.Main;
-import de.funkenstille.modfeedback.util.UserProfileManager;
+import de.funkenstille.modfeedback.util.UserUtils;
 import de.mineking.discordutils.commands.ApplicationCommand;
 import de.mineking.discordutils.commands.ApplicationCommandMethod;
 import de.mineking.discordutils.events.Listener;
@@ -60,8 +60,8 @@ public class BugReportCommand {
 		String actual = event.getValue("actual").getAsString();
 
 		MessageEmbed embed = new EmbedBuilder()
-				.setAuthor(String.format("%s • %s", UserProfileManager.getUsername(user), user.getId()), null,
-						UserProfileManager.getAvatarUrl(user))
+				.setAuthor(String.format("%s • %s", UserUtils.getUsername(user), user.getId()), null,
+						UserUtils.getMemberAvatar(user))
 				.setTitle(Emotes.bug_o + "〣Ein neuer Bug wurde gemeldet!")
 				.addField(Emotes.list_o + "〢Beschreibung", description, false)
 				.addField(Emotes.rules_o + "〢Wege den Bug zu reproduzieren", reproduce, false)
